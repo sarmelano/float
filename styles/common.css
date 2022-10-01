@@ -1,0 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #C4C4C4;
+  padding: 50px 50px;
+}

@@ -2,9 +2,22 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
   background-color: #C4C4C4;
   padding: 50px 50px;
+}
+
+.section {
+  background-color: #E6E6E6;;
+}
+
+.big {
+  max-width: 200px;
+  max-height: 200px;
+  background-color: #FC8F8F;
+
+  color: white;
 }

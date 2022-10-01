@@ -3,6 +3,9 @@
 *::after {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
 }
 
 .container {
@@ -10,14 +13,71 @@
   padding: 50px 50px;
 }
 
-.section {
-  background-color: #E6E6E6;;
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: '';
 }
 
-.big {
-  max-width: 200px;
-  max-height: 200px;
+.section {
+  background-color: #E6E6E6;
+  margin-bottom: 50px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.big,
+.biggy {
+  width: 200px;
+  height: 200px;
   background-color: #FC8F8F;
 
-  color: white;
+  font-size: 64px;
+  line-height: 200px;
 }
+
+.small {
+  direction: rtl;
+  width: 100px;
+  height: 100px;
+  background-color: #FC8F8F;
+
+  font-size: 36px;
+  line-height: 100px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.right:nth-child(5) {
+  margin-right: 15px;
+}
+
+.right:nth-child(4) {
+  margin-right: 15px;
+}
+
+.right:nth-child(3) {
+  margin-right: 15px;
+}
+
+.biggy {
+  display: inline-block;
+}
+
+.fs {
+  font-size: 0; /*kill weird margins*/
+}
+
+.fs>div {
+  margin-right: 15px;
+}
+
+
